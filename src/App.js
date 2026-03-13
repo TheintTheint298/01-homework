@@ -26,6 +26,7 @@ function App() {
             onClick={() => setActiveImage(img)}
             style={{
               border: activeImage === img ? "3px solid blue" : "1px solid gray",
+              opacity: activeImage === img ? 0.5 : 1,
             }}
           />
         ))}
