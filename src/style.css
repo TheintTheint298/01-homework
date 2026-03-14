@@ -21,3 +21,22 @@
     border-radius: 5px;
     cursor: pointer;
 }
+.box{
+    width: 120px;
+    height: 120px;
+    border: 2px solid #eee;
+    border-radius: 5px;
+}
+
+.label{
+    font-weight: bold;
+    color: #333;
+}
+
+.color-input{
+    padding: 8px 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
