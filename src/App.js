@@ -1,6 +1,8 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { useState } from "react";
+import ImageGallery from "./component/ImageGallery";
+import BoxColor from "./component/BoxColor";
 
 function App() {
   const images = [
@@ -10,28 +12,11 @@ function App() {
     "https://images.unsplash.com/photo-1433838552652-f9a46b332c40?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   ];
 
-  const [activeImage, setActiveImage] = useState(images[0]);
-
   return (
-    <div className="container">
-      <div>
-        <img className="main-image" src={activeImage} alt="Active" />
-      </div>
-      <div className="image-container">
-        {images.map((img, index) => (
-          <img
-            key={index}
-            src={img}
-            alt={`Thumbnail ${img}`}
-            onClick={() => setActiveImage(img)}
-            style={{
-              border: activeImage === img ? "3px solid blue" : "1px solid gray",
-              opacity: activeImage === img ? 0.5 : 1,
-            }}
-          />
-        ))}
-      </div>
-    </div>
+    <>
+      <ImageGallery images={images} />
+      <BoxColor />
+    </>
   );
 }
 
