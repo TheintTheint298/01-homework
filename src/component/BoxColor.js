@@ -4,7 +4,7 @@ export default function BoxColor() {
   const [color, setColor] = useState("pink");
 
   function handleColorChange(e) {
-    e.target.value ? setColor(e.target.value) : setColor("pink");
+    e.target.value ? setColor(e.target.value) : setColor(color);
   }
   return (
     <>
