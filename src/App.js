@@ -3,6 +3,7 @@ import "./App.css";
 import { useState } from "react";
 import ImageGallery from "./component/ImageGallery";
 import BoxColor from "./component/BoxColor";
+import DigitalClock from "./component/DigitalClock";
 
 function App() {
   const images = [
@@ -16,6 +17,7 @@ function App() {
     <>
       <ImageGallery images={images} />
       <BoxColor />
+      <DigitalClock />
     </>
   );
 }
