@@ -26,20 +26,34 @@ const styles = {
     margin: 0,
     textShadow: "0 0 8px rgba(209, 47, 206, 0.5)",
   },
+  button: {
+    fontSize: "1rem",
+    padding: "8px 18px",
+    marginTop: "16px",
+    borderRadius: "6px",
+    border: "none",
+    backgroundColor: "#ef2323",
+    color: "#fff",
+    cursor: "pointer",
+  },
 };
 
 export default function DigitalClock() {
   const [dateTime, setDateTime] = useState(new Date());
+  const [isRunning, setIsRunning] = useState(true);
 
   useEffect(() => {
-    const timerId = setInterval(() => {
-      setDateTime(new Date());
-    }, 1000);
+    let timerId;
 
+    if (isRunning) {
+      timerId = setInterval(() => {
+        setDateTime(new Date());
+      }, 1000);
+    }
     return () => {
-      clearInterval(timerId);
+      if (timerId) clearInterval(timerId);
     };
-  });
+  }, [isRunning]);
 
   const timeString = dateTime.toLocaleTimeString();
   const dateOptions = {
@@ -55,6 +69,15 @@ export default function DigitalClock() {
       <div style={styles.clockCard}>
         <p style={styles.dateText}>{dateString}</p>
         <h1 style={styles.timeText}>{timeString}</h1>
+        <button
+          onClick={() => setIsRunning(!isRunning)}
+          style={{
+            ...styles.button,
+            backgroundColor: isRunning ? "#ef2323" : "#25ba5b",
+          }}
+        >
+          {isRunning ? "Stop Timer" : "Start Timer"}
+        </button>
       </div>
     </div>
   );
