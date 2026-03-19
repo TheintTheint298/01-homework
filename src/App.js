@@ -5,6 +5,7 @@ import ImageGallery from "./component/ImageGallery";
 import BoxColor from "./component/BoxColor";
 import DigitalClock from "./component/DigitalClock";
 import FilterItems from "./component/FilterItems";
+import Count from "./component/Count";
 
 function App() {
   const images = [
@@ -20,6 +21,7 @@ function App() {
       <BoxColor />
       <DigitalClock />
       <FilterItems />
+      <Count />
     </>
   );
 }
