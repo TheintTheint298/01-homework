@@ -6,6 +6,7 @@ import BoxColor from "./component/BoxColor";
 import DigitalClock from "./component/DigitalClock";
 import FilterItems from "./component/FilterItems";
 import Count from "./component/Count";
+import LazyMainPage from "./component/LazyMainPage";
 
 function App() {
   const images = [
@@ -22,6 +23,7 @@ function App() {
       <DigitalClock />
       <FilterItems />
       <Count />
+      <LazyMainPage />
     </>
   );
 }
