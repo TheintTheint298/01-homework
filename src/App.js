@@ -7,6 +7,7 @@ import DigitalClock from "./component/DigitalClock";
 import FilterItems from "./component/FilterItems";
 import Count from "./component/Count";
 import LazyMainPage from "./component/LazyMainPage";
+import Modal from "./component/Modal";
 
 function App() {
   const images = [
@@ -24,6 +25,7 @@ function App() {
       <FilterItems />
       <Count />
       <LazyMainPage />
+      <Modal />
     </>
   );
 }
