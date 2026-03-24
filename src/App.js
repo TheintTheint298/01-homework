@@ -8,6 +8,7 @@ import FilterItems from "./component/FilterItems";
 import Count from "./component/Count";
 import LazyMainPage from "./component/LazyMainPage";
 import Modal from "./component/Modal";
+import ShoppingCart from "./component/ShoppingCart";
 
 function App() {
   const images = [
@@ -26,6 +27,7 @@ function App() {
       <Count />
       <LazyMainPage />
       <Modal />
+      <ShoppingCart />
     </>
   );
 }
