@@ -9,6 +9,7 @@ import Count from "./component/Count";
 import LazyMainPage from "./component/LazyMainPage";
 import Modal from "./component/Modal";
 import ShoppingCart from "./component/ShoppingCart";
+import ImageCard from "./component/ImageCard";
 
 function App() {
   const images = [
@@ -28,6 +29,7 @@ function App() {
       <LazyMainPage />
       <Modal />
       <ShoppingCart />
+      <ImageCard />
     </>
   );
 }
