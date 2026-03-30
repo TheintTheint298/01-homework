@@ -10,6 +10,7 @@ import LazyMainPage from "./component/LazyMainPage";
 import Modal from "./component/Modal";
 import ShoppingCart from "./component/ShoppingCart";
 import ImageCard from "./component/ImageCard";
+import HOCUserList from "./component/HOCUserList";
 
 function App() {
   const images = [
@@ -30,6 +31,7 @@ function App() {
       <Modal />
       <ShoppingCart />
       <ImageCard />
+      <HOCUserList />
     </>
   );
 }
