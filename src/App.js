@@ -11,6 +11,7 @@ import Modal from "./component/Modal";
 import ShoppingCart from "./component/ShoppingCart";
 import ImageCard from "./component/ImageCard";
 import HOCUserList from "./component/HOCUserList";
+import LoginForm from "./component/LoginForm";
 
 function App() {
   const images = [
@@ -32,6 +33,7 @@ function App() {
       <ShoppingCart />
       <ImageCard />
       <HOCUserList />
+      <LoginForm />
     </>
   );
 }
