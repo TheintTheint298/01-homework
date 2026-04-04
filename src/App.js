@@ -12,6 +12,7 @@ import ShoppingCart from "./component/ShoppingCart";
 import ImageCard from "./component/ImageCard";
 import HOCUserList from "./component/HOCUserList";
 import LoginForm from "./component/LoginForm";
+import MultiApi from "./component/MultiApi";
 
 function App() {
   const images = [
@@ -34,6 +35,7 @@ function App() {
       <ImageCard />
       <HOCUserList />
       <LoginForm />
+      <MultiApi />
     </>
   );
 }
